@@ -1,0 +1,29 @@
+Generated at 2016-03-29 14:50:34 -0400
+SyntaxError: /Users/laurencepowers/UC/chef-repo/cookbooks/simple.rb:5: syntax error, unexpected =>, expecting '}'
+...chef_server {:chef_server_url=>"https://manage.chef.io/organ...
+...                               ^
+/Users/laurencepowers/UC/chef-repo/cookbooks/simple.rb:5: syntax error, unexpected ',', expecting '}'
+...chef.io/organizations/lpowers", :options=>{:client_name=>"po...
+...                               ^
+/opt/chefdk/embedded/apps/chef/lib/chef/mixin/from_file.rb:30:in `instance_eval'
+/opt/chefdk/embedded/apps/chef/lib/chef/mixin/from_file.rb:30:in `from_file'
+/opt/chefdk/embedded/apps/chef/lib/chef/run_context.rb:185:in `load_recipe_file'
+/opt/chefdk/embedded/apps/chef/lib/chef/policy_builder/expand_node_object.rb:90:in `block in setup_run_context'
+/opt/chefdk/embedded/apps/chef/lib/chef/policy_builder/expand_node_object.rb:89:in `each'
+/opt/chefdk/embedded/apps/chef/lib/chef/policy_builder/expand_node_object.rb:89:in `setup_run_context'
+/opt/chefdk/embedded/apps/chef/lib/chef/client.rb:486:in `setup_run_context'
+/opt/chefdk/embedded/apps/chef/lib/chef/client.rb:266:in `run'
+/opt/chefdk/embedded/apps/chef/lib/chef/application.rb:270:in `block in fork_chef_client'
+/opt/chefdk/embedded/apps/chef/lib/chef/application.rb:258:in `fork'
+/opt/chefdk/embedded/apps/chef/lib/chef/application.rb:258:in `fork_chef_client'
+/opt/chefdk/embedded/apps/chef/lib/chef/application.rb:224:in `block in run_chef_client'
+/opt/chefdk/embedded/apps/chef/lib/chef/local_mode.rb:39:in `with_server_connectivity'
+/opt/chefdk/embedded/apps/chef/lib/chef/application.rb:212:in `run_chef_client'
+/opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:402:in `block in interval_run_chef_client'
+/opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:392:in `loop'
+/opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:392:in `interval_run_chef_client'
+/opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:382:in `run_application'
+/opt/chefdk/embedded/apps/chef/lib/chef/application.rb:60:in `run'
+/opt/chefdk/embedded/apps/chef/bin/chef-client:26:in `<top (required)>'
+/usr/bin/chef-client:55:in `load'
+/usr/bin/chef-client:55:in `<main>'
